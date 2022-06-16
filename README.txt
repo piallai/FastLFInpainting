@@ -28,7 +28,7 @@ Press "Run"
 
 III - Input :
 The executable file uses a master config file. A default config file is located at DATA/cfg/cfg_master.txt
-A master config file can be specified as argument : ./bin/Release/FAST_INPAINTING.exe DATA/cfg/cfg_master.txt
+A master config file can be specified as argument : ./bin/Release/FastLFInpainting.exe DATA/cfg/cfg_master.txt
 This config file calls other config files in charge of different parameters of the software, such as loading/saving light field functions or inpainting funtion.
 
 Main input parameters :
@@ -42,9 +42,9 @@ Output path is defined in cfg_master.txt
 V - Example :
 An example is given under the directory DATA/totoro_waterfall. The configuration files, the initial light field, the mask and the inpainted view are provided under this directory.
 
-To inpaint the light field "totoro_waterfall", enter the following command from the directory where the executable FAST_INPAINTING is:
+To inpaint the light field "totoro_waterfall", enter the following command from the directory where the executable FastLFInpainting.exe is:
 
-./FastLFInpainting ../DATA/totoro_waterfall/cfg/cfg_master.txt
+./FastLFInpainting.exe ../../DATA/totoro_waterfall/cfg/cfg_master.txt
 
 
 
@@ -53,5 +53,5 @@ Tips :
 One can remove these subapertures by setting subaperture_offsets in DATA/cfg/cfg_loader.txt
 Using offset of 2 images is usually enough to obtain a consistent light field.
 - Also, one can use parameter l_histogram_matching in DATA/cfg/cfg_loader.txt to obtain a more consistent light field regarding luminosity and colorimetry.
-- If loading of light field fails because of subapertures coordinates parsing issues,one can open DATA/cfg/cfg_loader.txt and set Nimages_auto to the corresponding number of images in the light field to help guessing of parsing.
+- If loading of light field fails because of subapertures coordinates parsing issues, one can open DATA/cfg/cfg_loader.txt and set Nimages_auto to the corresponding number of images in the light field to help guessing of parsing.
 - Parsing can also fail because of two images having same angular coordinates in their name. One can use filter_strings parameter in DATA/cfg/cfg_loader.txt to filter out images containing defined strings.

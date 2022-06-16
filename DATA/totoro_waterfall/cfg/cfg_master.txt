@@ -9,4 +9,4 @@ cfg_loader.txt
 #=# method_config_path : Path to config file in charge of inpainting.
 cfg_inpainting.txt
 #=# data_path : Path where data are written.
-../DATA/totoro_waterfall/inpainted_light_field
+../../DATA/totoro_waterfall/inpainted_light_field

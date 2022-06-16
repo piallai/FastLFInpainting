@@ -2,7 +2,7 @@
 # Config file for loading a light-field.
 ################################################################################
 #=# LF_path : Path to a folder containing light field images. Can take a second argument to specify recursivity ("R") or not.
-../DATA/totoro_waterfall/light_field
+../../DATA/totoro_waterfall/light_field
 
 #=# time_index : If loading a time serie light field, to specify which time index to consider. If none specified, lowest one is selected.
 
