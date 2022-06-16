@@ -1,4 +1,12 @@
-Fast Inpainting project. Inria License.
+Fast Light Field Inpainting project. AGPL-3.0 license.
+
+This project implements the method proposed in the paper:
+P. Allain, L. Guillo, C. Guillemot, Fast light field inpainting using angular warping with a color-guided disparity interpolation, Advanced Concepts for Intelligent Vision Systems, ACIVS, Poitiers, 24-27 Sept. 2018.
+
+More information can be found at http://clim.inria.fr/research/InpaintFast/index.html
+
+
+-------------------------------------------------------------------------------------------------
 
 Needs CMake minimum 3.0 to be installed.
 Needs the following libraries to be installed : OpenCV(+contribs), and boost (system, filesystem, thread).
