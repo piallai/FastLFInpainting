@@ -1,0 +1,15 @@
+################################################################################
+# Config file for superpixel segmentation of images based on SLIC algorithm.
+################################################################################
+#=# Nsuperpixels : Number of superpixels for algorithm initialization (Slic can modify this number). If set to 0, next parameter is used instead.
+0
+#=# Nsuperpixels_per_pixel : Number of superpixels per pixel in image. Use only if Nsuperpixels is set to 0.
+0.001
+#=# ruler_coef : Coefficient applied to ruler parameter of SLIC method. 10.0 => almost grid, 1.0 => smooth segmentation, 0.1 => quite detailed.
+0.5
+#=# Niterations_sps : Number of iterations for slic algorithm.
+30
+#=# conversion_type : Color conversion of images for segmentation. This is an opencv index. CV_BGR2LAB : 44. Not recolored : -1
+44
+#=# sigma_blur : Smoothing (in pixels, direction x and y) applied to image before applying slic algorithm.
+5 5

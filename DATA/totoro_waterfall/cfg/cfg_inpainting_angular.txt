@@ -1,0 +1,13 @@
+################################################################################
+# Config file for angular inpainting method.
+################################################################################
+#=# disparity_smoothness : Smoothing (in pixels) applied to disparity in image's space
+1
+#=# disparity_computing_config_path : Path to config file for disparity computation.
+cfg_disparity_local.txt
+#=# sps_config_path : path of config file for superpixel segmentation
+cfg_superpixel_segmentation.txt
+#=# sps_merger_config_path : path of config file for segmentation mask merger
+cfg_superpixel_merger.txt
+#=# sps_interpolation_config_path : path of config file for superpixel interpolation
+cfg_superpixel_interpolation.txt

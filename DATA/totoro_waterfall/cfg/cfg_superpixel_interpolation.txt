@@ -1,0 +1,15 @@
+################################################################################
+# Config file for interpolation of data inside a mask using superpixel segmentation.
+################################################################################
+#=# Nweight_pixels : Maximum number of pixels used for interpolation weights.
+20
+#=# distance_coef : Coefficient applied to color distance (vs pixel spatial distance).
+# This coefficient is multiplied by a ratio of color and pixel positions variation in a superpixel to provide more robust parametrization.
+# If set ton infinity, yields color-driven interpolation.
+# If set to 0, yields distance-driven interpolation.
+# 0.00001 seems like a good trade-off.
+0.00001
+#=# sigma_coef : Coefficient applied to standard deviation used for gaussian weighting.
+# If infinity, all weights have the same value.
+# If tends to 0, closest pixel's weight tends to infinity, others to 0.
+1

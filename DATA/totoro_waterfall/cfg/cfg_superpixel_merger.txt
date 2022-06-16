@@ -1,0 +1,7 @@
+################################################################################
+# Config file for superpixels merger using a mask.
+################################################################################
+#=# Nknown_pixels_min : Minimum number of pixels unmasked per superpixel.
+20
+#=# merge_coef :  Coefficient applied to standard deviation measure (versus median) for superpixels when computing distance between superpixels.
+0

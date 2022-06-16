@@ -1,0 +1,11 @@
+################################################################################
+# Config file for computing disparity using all light field.
+################################################################################
+#=# disparity_bound : Min/max disparity value
+2.
+#=# l_denoise_disparity :  Whether disparity is denoised using TVL1.
+1
+#=# lambda_denoise : parameter for denoising [0,1]
+0.5
+#=# Niterations_denoise : Number of iterations for denoising.
+11

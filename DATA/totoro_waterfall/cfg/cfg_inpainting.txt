@@ -1,0 +1,14 @@
+################################################################################
+# Config file for inpainting method.
+################################################################################
+#=# inpainted_subaperture_path : Path to beforehand inpainted subaperture.
+../DATA/totoro_waterfall/inpainted_view/totoro_waterfall_inpainted_manual_0025.png
+
+#=# subaperture_position : Position of inpainted subaperture on uv coordinates.
+3 3
+
+#=# mask_path : Path to mask applied for inpainting. Represent the area which will be modified.
+../DATA/totoro_waterfall/mask/totoro_waterfall_mask.png
+
+#=# inpainting_config_path : Path to configuration file for inpainting algorithm.
+cfg_inpainting_angular.txt

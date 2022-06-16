@@ -1,0 +1,12 @@
+################################################################################
+# Main config file for FastInpainting C++ program. Use # for comments.
+# Parameters name must be preceded by #=#, and the next uncommented line must be their value.
+# Path to other config files must be defined either by absolute path,
+# or relatively to the directory of current config file.
+################################################################################
+#=# LF_loader_config_path : Path to config file in charge of loading the light-field.
+cfg_loader.txt 
+#=# method_config_path : Path to config file in charge of inpainting.
+cfg_inpainting.txt
+#=# data_path : Path where data are written.
+../DATA/totoro_waterfall/inpainted_light_field

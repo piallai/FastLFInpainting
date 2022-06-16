@@ -1,0 +1,43 @@
+################################################################################
+# Config file for loading a light-field.
+################################################################################
+#=# LF_path : Path to a folder containing light field images. Can take a second argument to specify recursivity ("R") or not.
+
+#=# time_index : If loading a time serie light field, to specify which time index to consider. If none specified, lowest one is selected.
+
+#=# l_invert_uv : If u and v are inverted (true most of the time)
+1
+#=# uv_axis_coef : Baseline, direction of each u v axis, and axis coefficients.
+1 -1
+#=# center_coordinates : Coordinates of central subaperture. Float value. If null, set to half of light field dimensions.
+0 0
+#=# image_scale : Image scaling applied to read subapertures. Convenient to downsize image dimensions.
+1 1
+#=# subaperture_offsets : Subaperture offsets (left, bottom, right, up). Number of ignored subapertures on the edge of the light field. Can be usefull for faster computation and testing.
+2 2 2 2
+#=# angular_modulo :  Angular modulo of read subapertures. Convenient to down sample light field. For instance if light field is dimension 7x7, angular modulo of 3x3 leads to a 3x3 light field (border images + center).
+1 1
+#=# l_histogram_matching : Whether histogram matching is applied on every subapertures. Convenient for light fields which luminosity and colorimetry differs when changing subaperture. Reference image is center subaperture.
+0
+#=# Ncrop_pixels : Number of pixels to crop on the edges of the subapertures (left, up right, bottom). Can be usefull if edges have some corrupted pixels (lytro capture for instance)
+0 0 0 0
+#=# l_auto_read : whether subapertures file name is automatically translated to u,v,time coordinates using likeliness coefficients. See parameters Nimages_auto, Nimages_std_auto, ratio_std_auto.
+1
+#=# reading_format_config_path : Path pointing to config file for light field parsing. Used only if l_auto_read is set to false.
+cfg_parser.txt
+############################################################################
+###### If automatic parsing of light field, ie l_auto_read set to 1 ########
+############################################################################
+#=# Nimages_auto : If l_auto_read is set to true, expected number of images in light fields.
+256
+#=# Nimages_std_auto : If l_auto_read is set to true, standard deviation of number of images in light fields.
+64
+#=# ratio_std_auto : If l_auto_read is set to true, dimensions ratio. Measures likeliness of light fields dimensions when Nu != Nv.
+# Accounts for inverse of standard deviation, of distance of light fiel ratio to value 1. When high, light field has to be of very squares angular dimensions to be likely. When low, dimensions of light field doesn't matter much.
+30
+###################################################
+#=# filter_strings : If one of the following strings is contained in a subaperture filename, then it is ignored.
+# Usefull when some files are related to the same subaperture coordinate.
+mask colorized hue inp
+#=# l_display_subapertures : If subapertures are displayed after loading.
+0

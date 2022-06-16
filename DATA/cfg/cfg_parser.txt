@@ -1,0 +1,17 @@
+################################################################################
+# Config file for loading a light-field, Only applies if l_auto_read == false in cfg_loader.txt.
+# Allows user to specify reading format.
+################################################################################
+#=# l_single_index_for_subapertures : Whether subapertures are only described by a single index
+0
+#=# uvt_position_in_name : C programming convention : first index is 0
+# If only one value, position of [index] coordinate. l_single_index_for_subapertures must be set to true
+# If only two values,  position of [u, v] coordinates if l_single_index_for_subapertures==false
+# If only two values, position of [index, time] coordinates if l_single_index_for_subapertures==true
+# If three values,  position of [u,v,time] coordinates in file name 
+2 1 0
+#=# UVdims : number of subapertures in dimension u and v (when subapertures are only labelled by a single index, ie: l_single_index_for_subapertures=true).
+# If [0,0], values are automatically guessed based 1) on the range of indices, 2) U dimension being higher than V's, 3) Maximizing dimensions product
+3 3
+#=# l_begin0 : If l_single_index_for_subapertures is true, wether first index is 0 or first found index.
+0

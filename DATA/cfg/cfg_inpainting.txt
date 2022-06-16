@@ -1,0 +1,11 @@
+################################################################################
+# Config file for inpainting method.
+################################################################################
+#=# inpainted_subaperture_path : Path to beforehand inpainted subaperture.
+
+#=# subaperture_position : Position of inpainted subaperture on uv coordinates.
+3 3
+#=# mask_path : Path to mask applied for inpainting. Represent the area which will be modified.
+
+#=# inpainting_config_path : Path to configuration file for inpainting algorithm.
+cfg_inpainting_angular.txt
