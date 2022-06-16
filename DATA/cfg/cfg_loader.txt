@@ -30,9 +30,9 @@ cfg_parser.txt
 ############################################################################
 #=# Nimages_auto : If l_auto_read is set to true, expected number of images in light fields.
 256
-#=# Nimages_std_auto : If l_auto_read is set to true, standard deviation of number of images in light fields.
+#=# coef_std_Nimages_auto : If l_auto_read is set to true, standard deviation of number of images in light fields.
 64
-#=# ratio_std_auto : If l_auto_read is set to true, dimensions ratio. Measures likeliness of light fields dimensions when Nu != Nv.
+#=# coef_std_ratio_auto : If l_auto_read is set to true, dimensions ratio. Measures likeliness of light fields dimensions when Nu != Nv.
 # Accounts for inverse of standard deviation, of distance of light fiel ratio to value 1. When high, light field has to be of very squares angular dimensions to be likely. When low, dimensions of light field doesn't matter much.
 30
 ###################################################
