@@ -5,8 +5,9 @@ P. Allain, L. Guillo, C. Guillemot, Fast light field inpainting using angular wa
 
 More information can be found at http://clim.inria.fr/research/InpaintFast/index.html
 
-
 -------------------------------------------------------------------------------------------------
+
+The code is derived from the Celf library as a standalone project.
 
 Needs CMake minimum 3.0 to be installed.
 Needs the following libraries to be installed : OpenCV(+contribs), and boost (system, filesystem, thread).
